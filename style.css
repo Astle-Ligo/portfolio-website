@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* NAVBAR */
+
+nav {
+    width: 100dvw;
+    height: 4rem;
+    position: fixed;
+    bottom: 4%;
+}
+
+
+.navbar {
+    width: 30%;
+    height: 100%;
+    background-color: red;
+    z-index: 100;
+    border-radius: 2rem;
+}
+
+.nav-items {
+    width: 100%;
+}
+
+.nav-items>ul {
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.nav-items>ul>a {
+    text-decoration: none;
+}
+
+
+/* HOME */
+
+.home {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+
+/* ABOUT */
+
+.about {
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-left {
+    width: 85%;
+}
+
+.about-right {
+    width: 15%;
+}
+
+.about-right>h1 {
+    writing-mode: vertical-lr;
+}
+
+/* PROJECT */
+
+.gsapcontainer {
+    width: 600%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: aqua;
+    gap: 10rem;
+}
+
+.panel {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    background-color: red;
+}
+
+.panel1 {
+    background-color: yellow;
+    position: sticky;
+    z-index: 10;
+}
+
+.outer-box {
+    width: 90%;
+    height: 90%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.mockup-image {
+    width: 65%;
+    aspect-ratio: 1;
+    background-color: brown;
+}
+
+.project-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* SKILLS */
+
+.skills {
+    width: 100dvw;
+    display: flex;
+}
+
+.skills-left {
+    width: 15%;
+}
+
+.skills-left>h1 {
+    writing-mode: vertical-lr;
+}
+
+.skills-right {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.skills-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 5rem;
+    background-color: blue;
+}
+
+.language-box {
+    width: 100%;
+    height: 15rem;
+    background-color: indigo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.language-head {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5rem;
+}
+
+.language-image-box {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+    padding-left: 2rem;
+}
+
+.language-image {
+    width: 10rem;
+    height: 10rem;
+}
+
+#html {
+    background: url(./Images/html.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#css {
+    background: url(./Images/css.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#js {
+    background: url(./Images/JavaScript.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#react {
+    background: url(./Images/react.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bootstrap {
+    background: url(./Images/bootstrappng.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#node {
+    background: url(./Images/node.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mongodb {
+    background: url(./Images/mongodb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#node {
+    background: url(./Images/node.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#node {
+    background: url(./Images/node.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* GALLERY */
+
+.gallery {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-left {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-box {
+    width: 45rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.gallery-right {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-right>h2{
+    writing-mode: vertical-rl;
+}
+
+.card {
+    position: relative;
+    left: 0;
+    width: 3rem;
+    border-radius: 5rem;
+
+    height: 25rem;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+
+    box-shadow: 0 5 12px rgba(0, 0, 0, .3);
+    flex: .15;
+}
+
+.card img {
+    position: relative;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.card:hover {
+    flex: 1 1 0;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+#image1 {
+    background: url(https://images.unsplash.com/photo-1704739300067-0cfbf8eb8bd3?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+}
+
+/* CONTACT */
+
+.contact{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-head{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    border: solid black 0.1rem;
+    border-radius: 3rem;
+}
+
+.contact-content{
+    width: 100%;
+    height: fit-content;
+}
+
+.contact-left{
+    width: 30%;
+    height: 60%;
+    border: solid black 0.1rem;
+    border-radius: 3rem;
+}
+.contact-left>h3{
+    writing-mode:sideways-lr;
+}
+.contact-right{
+    width: 70%;
+    height: 60%;
+}
+
+.social-grid{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.social-media{
+    width: 20rem;
+    height: 5rem;
+    border: solid black 0.1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social-media:hover{
+    color: white;
+    background-color: black;
+    justify-content: space-around;
+    transition: 1s;
+}
