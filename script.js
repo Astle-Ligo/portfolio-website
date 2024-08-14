@@ -34,10 +34,6 @@ window.addEventListener('scroll', function () {
 
 // gallery
 
-function navigateToPage(pageUrl) {
-  window.location.href = pageUrl;
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('.container');
 

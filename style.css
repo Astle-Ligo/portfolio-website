@@ -26,7 +26,7 @@ html {
 
 /* NAVBAR */
 
-nav {
+.nav-bar {
     width: 100dvw;
     height: 4rem;
     position: fixed;
@@ -528,7 +528,7 @@ nav {
 
 #card-8 {
     background-image: url(./Images/WhatsApp\ Image\ 2024-08-14\ at\ 03.02.07_f9637837.jpg);
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
 }
