@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>ASTLE PORTFOLIO</title>
 </head>
@@ -18,12 +19,12 @@
     </section>
 
     <section class="about" id="about">
-        <div class="about-left">
+        <div class="about-left" data-aos="fade-down">
             <h1>ABOUT</h1>
 
         </div>
         <div class="about-right center">
-            <p>
+            <p data-aos="fade-up">
                 Ambitious and self-taught web developer with a strong foundation in full-stack technologies. Currently
                 pursuing a bachelor’s in computer application while actively engaging in freelance projects and
                 competitive coding events. Demonstrated expertise in creating responsive and user-friendly web
@@ -31,74 +32,102 @@
                 learning and applying cutting-edge web development practices to deliver high-quality, innovative
                 solutions.
             </p>
-            <a href="./files/Astle Web Developer.docx" class="download-cv" download="">Download CV ↘</a>
+            <a href="./files/Astle Resume.pdf" class="download-cv" download data-aos="fade-up">Download CV ↘</a>
         </div>
     </section>
 
     <section class="project" id="project">
-        <div class="gsapcontainer">
-            <section class="panel panel1">
-                <h1>PROJECTS →</h1>
-            </section>
-            <section class="panel">
-                <div class="outer-box">
-                    <div class="mockup-image"></div>
-                    <div class="project-details">
-                        <h2 class="project-name">PROJECT 1</h2>
-                        <p class="project-date">2024</p>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                            ea commodi, qui amet esse labore rerum saepe cum consequatur nisi nemo unde, hic, laborum
-                            fugit alias animi similique autem! Magnam.</p>
+
+        <section id="horizontal-scoll">
+            <div class="horizontal-scoll-wrapper">
+                <div class="horizontal">
+                    <div>
+                        <section class="panel panel1" data-aos="fade-right">
+                            <h1>PROJECTS →</h1>
+                        </section>
                     </div>
-                </div>
-            </section>
-            <section class="panel">
-                <div class="outer-box">
-                    <div class="mockup-image"></div>
-                    <div class="project-details">
-                        <h2 class="project-name"></h2>
-                        <p class="project-date"></p>
-                        <p class="project-description"></p>
+                    <div>
+                        <section class="panel" id="watermelon-box">
+                            <div class="outer-box">
+                                <a href="https://astle-ligo.github.io/GSAP-scrolltrigger/" target="_blank">
+                                    <div class="mockup-image" id="watermelon"></div>
+                                </a>
+                                <div class="project-details">
+                                    <h2 class="project-name">WATERMELON SPLASH</h2>
+                                    <p class="project-date">August - 2024</p>
+                                    <p class="project-description">I combined HTML, CSS, JavaScript, and the GSAP plugin
+                                        to create a video that seamlessly plays as users scroll through a webpage. This
+                                        involved structuring the HTML, styling elements with CSS, and using JavaScript
+                                        and GSAP to synchronize video playback with scroll position.</p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                </div>
-            </section>
-            <section class="panel">
-                <div class="outer-box">
-                    <div class="mockup-image"></div>
-                    <div class="project-details">
-                        <h2 class="project-name"></h2>
-                        <p class="project-date"></p>
-                        <p class="project-description"></p>
+                    <div>
+                        <section class="panel" id="tech-quest-box">
+                            <div class="outer-box">
+                                <a href="">
+                                    <a href="https://astle-ligo.github.io/tech-quest/" target="_blank">
+                                        <div class="mockup-image" id="tech-quest"></div>
+                                    </a>
+                                </a>
+                                <div class="project-details">
+                                    <h2 class="project-name">TECH QUEST 2024</h2>
+                                    <p class="project-date">March - 2024</p>
+                                    <p class="project-description">I developed a website using HTML, CSS, and JavaScript
+                                        for a national-level IT hackathon hosted by the Computer Science department of
+                                        St. Joseph's University.</p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                </div>
-            </section>
-            <section class="panel">
-                <div class="outer-box">
-                    <div class="mockup-image"></div>
-                    <div class="project-details">
-                        <h2 class="project-name"></h2>
-                        <p class="project-date"></p>
-                        <p class="project-description"></p>
+                    <div>
+                        <section class="panel" id="danil-vilov-box">
+                            <div class="outer-box">
+                                <div class="mockup-image" id="danil-vilov"></div>
+                                <div class="project-details">
+                                    <h2 class="project-name">DANIL VILOV</h2>
+                                    <p class="project-date">August - 2023</p>
+                                    <p class="project-description">I've developed a comprehensive e-commerce platform
+                                        utilizing
+                                        HTML, CSS, and JavaScript for the frontend, coupled with Node.js, Express.js for
+                                        backend
+                                        operations, and MongoDB as the database. The system incorporates a robust admin
+                                        panel
+                                        alongside a user-friendly storefront. To enhance visual appeal, I've integrated
+                                        Splide.js
+                                        for dynamic content display.</p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                </div>
-            </section>
-            <section class="panel">
-                <div class="outer-box">
-                    <div class="mockup-image"></div>
-                    <div class="project-details">
-                        <h2 class="project-name"></h2>
-                        <p class="project-date"></p>
-                        <p class="project-description"></p>
+                    <div>
+                        <section class="panel" id="treasure-hunt-box">
+                            <div class="outer-box">
+                                <a href="https://astle-ligo.github.io/Treasure-Hunt/" target="_blank">
+                                    <div class="mockup-image" id="treasure-hunt"></div>
+                                </a>
+                                <div class="project-details">
+                                    <h2 class="project-name">TREASURE HUNT GAME</h2>
+                                    <p class="project-date">March-2023</p>
+                                    <p class="project-description">I created an online-offline treasure hunt game using
+                                        HTML, CSS, and JavaScript for the Tejas-2023 event at St. Joseph's University.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
+
                 </div>
-            </section>
-        </div>
+
+            </div>
+        </section>
     </section>
 
     <section class="skills" id="skills">
         <div class="skills-left center">
             <div class="skills-box">
-                <div class="lanuage-box">
+                <div class="lanuage-box" data-aos="flip-left">
                     <h1>FRONTEND</h1>
                     <div class="sub-language">
                         <ul>
@@ -110,7 +139,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="lanuage-box">
+                <div class="lanuage-box" data-aos="flip-left">
                     <h1>BACKEND</h1>
                     <div class="sub-language">
                         <ul>
@@ -119,7 +148,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="lanuage-box">
+                <div class="lanuage-box" data-aos="flip-left">
                     <h1>DATABASE</h1>
                     <div class="sub-language">
                         <ul>
@@ -127,7 +156,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="lanuage-box">
+                <div class="lanuage-box" data-aos="flip-left">
                     <h1>VERSION CONTROL</h1>
                     <div class="sub-language">
                         <ul>
@@ -136,7 +165,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="lanuage-box">
+                <div class="lanuage-box" data-aos="flip-left">
                     <h1>OTHER LANGUAGES</h1>
                     <div class="sub-language">
                         <ul>
@@ -150,12 +179,15 @@
             </div>
         </div>
         </div>
-        <div class="skills-right center">
+        <div class="skills-right center" data-aos="fade-down">
             <h1>SKILLS</h1>
     </section>
 
     <section class="gallery" id="gallery">
-        <div class="gallery-left">
+        <div class="gallery-left" data-aos="fade-right">
+            <h2>GALLERY</h2>
+        </div>
+        <div class="gallery-right">
             <div class="scroll-container">
                 <div class="container">
                     <div class="card" id="card-1">
@@ -176,7 +208,7 @@
                     </div>
                     <div class="card" id="card-9">
                     </div>
-                    <div class="card" id="card-10">
+                    <!-- <div class="card" id="card-10">
                     </div>
                     <div class="card" id="card-11">
                     </div>
@@ -185,31 +217,29 @@
                     <div class="card" id="card-13">
                     </div>
                     <div class="card" id="card-14">
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
-        </div>
-        <div class="gallery-right">
-            <h2>GALLERY</h2>
         </div>
     </section>
 
     <section class="contact center" id="contact">
         <div class="contact-head">
-            <h1>IMPRESSED WITH MY WORK :)</h1>
-            <h3>WANT TO COLLABRATE?</h3>
+            <h1>ASTLE LIGO</h1>
         </div>
         <div class="contact-content center">
             <div class="contact-left center">
-                <h3>CONNECT ME HERE!</h3>
+                <p>© 2024 ASTLE LIGO | ALL COPYRIGHT RESERVED</p>
             </div>
             <div class="contact-right center">
                 <div class="social-grid">
-                    <a href="" class="social-media " id="">INSTAGRAM <span>↗</span></a>
-                    <a href="" class="social-media " id="">WHATSAPP<span>↗</span></a>
-                    <a href="" class="social-media " id="">LINKEDIN<span>↗</span></a>
-                    <a href="" class="social-media " id="">GITHUB<span>↗</span></a>
+                    <a href="https://www.instagram.com/astle.dev?igsh=MTYwYTcwZmx0aGx5Mg==" class="social-media "
+                        id="" target="_blank">INSTAGRAM <span>↗</span></a>
+                    <a href="https://wa.me/+918590867797" class="social-media " id="" target="_blank">WHATSAPP<span>↗</span></a>
+                    <a href="https://www.linkedin.com/in/astle-l-a77891230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        class="social-media " id="" target="_blank">LINKEDIN<span>↗</span></a>
+                    <a href="https://github.com/Astle-Ligo" class="social-media " id="" target="_blank">GITHUB<span>↗</span></a>
                 </div>
             </div>
         </div>
@@ -218,13 +248,16 @@
         <div class="navbar center" id="navbar">
             <div class="nav-items center">
                 <ul class="center">
-                    <a href="/index.html">
+                    <a href="/">
                         <li>ASTLE</li>
-                    </a><a href="#about">
+                    </a>
+                    <a href="#about">
                         <li>ABOUT</li>
-                    </a><a href="#project">
+                    </a>
+                    <a href="#project">
                         <li>PROJECTS</li>
-                    </a><a href="#contact">
+                    </a>
+                    <a href="#contact">
                         <li>CONTACT</li>
                     </a>
                 </ul>
@@ -233,8 +266,7 @@
     </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>

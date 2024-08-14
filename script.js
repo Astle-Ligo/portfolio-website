@@ -1,16 +1,21 @@
+AOS.init();
+
 gsap.registerPlugin(ScrollTrigger);
 
-let sections = gsap.utils.toArray(".panel");
+let horizontalSection = document.querySelector('.horizontal');
 
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: "none",
+console.log(horizontalSection.scrollWidth);
+
+gsap.to('.horizontal', {
+  x: () => horizontalSection.scrollWidth * -1,
+  xPercent: 100,
   scrollTrigger: {
-    trigger: ".gsapcontainer",
-    pin: true,
-    scrub: 1,
-    // snap: 1 / (sections.length - 1),
-    end: () => "+=" + document.querySelector(".gsapcontainer").offsetWidth
+    trigger: '.horizontal',
+    start: 'center center',
+    end: '+=2000px',
+    pin: '#horizontal-scoll',
+    scrub: true,
+    invalidateOnRefresh: true
   }
 });
 
@@ -37,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('.container');
 
   // Define scroll speed and interval
-  const scrollSpeed = 5; // Adjust scroll speed (higher value for faster scrolling)
+  const scrollSpeed = 10; // Adjust scroll speed (higher value for faster scrolling)
   const scrollInterval = 30; // Adjust scroll interval in milliseconds
   let scrollDirection = 'right'; // Initial scroll direction
 
@@ -79,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
 
 
 
